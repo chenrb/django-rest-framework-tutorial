@@ -1,4 +1,4 @@
 # django-rest-framework-tutorial
 
-第五章： 关系与超链接  
-`serializers.HyperlinkedModelSerializer`把id外键改为url链接
+第六章： 视图集与路由  
+使用`viewset`重构view，使用`router`注册路由

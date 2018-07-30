@@ -8,7 +8,7 @@ from snippets.models import Snippets
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
     # snippets = serializers.PrimaryKeyRelatedField(many=True, queryset=Snippets.objects.all())
-    snippets = serializers.HyperlinkedRelatedField(many=True, view_name='snippet-detail', read_only=True)
+    snippets = serializers.HyperlinkedRelatedField(many=True, view_name='snippets-detail', read_only=True)
 
     class Meta:
         model = User
@@ -17,7 +17,7 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
 
 class SnippetSerializer(serializers.HyperlinkedModelSerializer):
     owner = serializers.ReadOnlyField(source='owner.username')
-    highlight = serializers.HyperlinkedIdentityField(view_name='snippet-highlight', format='html')
+    highlight = serializers.HyperlinkedIdentityField(view_name='snippets-highlight', format='html')
 
     class Meta:
         model = Snippets
