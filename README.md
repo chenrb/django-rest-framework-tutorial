@@ -1,4 +1,7 @@
 # django-rest-framework-tutorial
 
-Python2.7  
-djangorestframework==3.8.2  
+### DRF框架学习  
+环境：  
+ - Python3.8  
+ - djangorestframework==3.11.0  
+
