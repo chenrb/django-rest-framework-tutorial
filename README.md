@@ -5,4 +5,5 @@
 环境：  
 
 - Python3.8  
+- Django==3.0.3  
 - djangorestframework==3.11.0  
